@@ -1,0 +1,145 @@
+.header {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #EFEFF4;
+  //box-shadow: 0 0 2px 0 rgba(0,0,0,0.24);
+  .header-bd {
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 30px;
+    @media only screen and (min-width: 1200px) {
+      width: 1200px;
+      padding: 0;
+    }
+
+    .ant-row {
+      background-color: #FFFFFF;
+      .ant-menu-item-selected {
+        a {
+          color: #C3973C;
+        }
+      }
+    }
+  }
+  .icon {
+    .logo {
+      display: block;
+      width: 154px;
+      height: 60px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 43px;
+        margin: 9px 0 8px 0;
+      }
+    }
+  }
+  .header-l {
+    margin: 7px 0 0 -5px;
+    font-size: 17px;
+    float: left;
+    a {
+      color: #666666;
+      font-weight: 400;
+    }
+    a:hover {
+      color: #666666;
+      font-weight: 400;
+    }
+  }
+  .header-r {
+    float: right;
+    .header-r-item {
+      float: left;
+      height: 60px;
+      margin-left: 30px;
+      .anchor {
+        line-height: 60px;
+        color: #393A4C;
+        font-size: 17px;
+      }
+      .qr-code {
+        cursor: pointer;
+        .iconfont {
+          line-height: 60px;
+          font-size: 20px;
+        }
+      }
+      .my-info {
+        .avatar {
+          float: left;
+          width: 30px;
+          height: 30px;
+          border-radius: 15px;
+          overflow: hidden;
+          margin: 15px 10px 15px 0;
+          img {
+            border: 0;
+            width: 30px;
+            height: 30px;
+          }
+        }
+        .full-name,
+        .logout {
+          float: left;
+          line-height: 21px;
+          margin-top: 20px;
+          font-size:15px;
+        }
+        .logout {
+          margin-left: 11px;
+        }
+      }
+    }
+    .separator {
+      padding: 20px 1px;
+      font-style: normal;
+      color: rgba(221, 221, 221, 0.68);
+    }
+  }
+
+}
+.qr-tip {
+  opacity: 1;
+  .ant-tooltip-arrow {
+    top: -7px;
+    margin-left: -10px;
+    border-width: 0 11px 15px;
+    border-bottom-color: #FFFFFF;
+  }
+  .ant-tooltip-inner {
+    background-color: #FFFFFF;
+    max-width: inherit;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.18);
+  }
+}
+.app-download {
+  width: 256px;
+  padding: 20px;
+  .qr-wrap {
+    width: 216px;
+    height: 216px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .tip {
+    margin-top: 15px;
+    height: 21px;
+    line-height: 21px;
+    font-size: 15px;
+    color: #393A4C;
+    text-align: center;
+  }
+  .btn-group {
+    margin-top: 15px;
+    margin-left: -10px;
+    .ant-btn {
+      margin-left: 10px;
+      width: 103px;
+      height: 36px;
+    }
+  }
+}
+

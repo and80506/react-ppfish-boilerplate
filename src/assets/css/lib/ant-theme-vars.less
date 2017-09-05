@@ -1,0 +1,96 @@
+// Available theme variables can be found in
+// https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less
+// Color
+@primary-color          : #C3973C;
+@buy-color              : #E74528;
+@sell-color             : #007AFF;
+
+// ------ Base & Require ------
+@body-background        : #fff;
+
+@font-family            : -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", sans-serif;
+@code-family            : Consolas,Menlo,Courier,monospace;
+@text-color             : #000000;
+
+// ICONFONT
+@iconfont-css-prefix    : anticon;
+@icon-url               : "https://at.alicdn.com/t/font_r5u29ls31bgldi";
+//@icon-url               : "/src/assets/iconfont/iconfont"; // 把 iconfont 地址改到本地, TODO: 需要解决相对路径问题
+
+// LINK
+@link-color             : @primary-color;
+@link-hover-color       : @primary-color;
+
+// Border color
+@border-color-base      : #d9d9d9;        // base border outline a component
+@border-color-split     : #e9e9e9;        // split border inside a component
+
+// Shadow
+@shadow-color           : rgba(100, 100, 100, .2);
+@box-shadow-base        : @shadow-1-down;
+@shadow-1-up            : 0 -1px 6px @shadow-color;
+@shadow-1-down          : 0 1px 6px @shadow-color;
+@shadow-1-left          : -1px 0 6px @shadow-color;
+@shadow-1-right         : 1px 0 6px @shadow-color;
+@shadow-2               : 0 1px 8px @shadow-color;
+
+// Buttons
+@btn-font-weight        : 500;
+
+@btn-primary-color      : #fff;
+@btn-primary-bg         : @primary-color;
+@btn-group-border       : shade(@primary-color, 5%);
+
+@btn-default-color      : @text-color;
+@btn-default-bg         : #f7f7f7;
+@btn-default-border     : @border-color-base;
+
+@btn-ghost-color        : @text-color;
+@btn-ghost-bg           : transparent;
+@btn-ghost-border       : @border-color-base;
+
+@btn-disable-color      : #ccc;
+@btn-disable-bg         : #f7f7f7;
+@btn-disable-border     : @border-color-base;
+
+@btn-padding-base       : 4px 15px;
+
+@btn-font-size-lg       : 14px;
+@btn-padding-lg         : 4px 15px 5px 15px;
+
+@btn-padding-sm         : 1px 7px;
+
+@btn-circle-size        : 28px;
+@btn-circle-size-lg     : 32px;
+@btn-circle-size-sm     : 22px;
+
+// z-index list
+
+// Form
+// --------------------------------
+// Legend
+@legend-color                : #999;
+@legend-border-color         : @border-color-base;
+// Label
+@label-required-color        : #f50;
+@label-color                 : @text-color;
+// Input
+@input-height-base: 28px;
+@input-height-lg: 32px;
+@input-height-sm: 22px;
+
+@input-padding-horizontal    : 7px;
+@input-padding-vertical-base : 4px;
+@input-padding-vertical-sm   : 1px;
+@input-padding-vertical-lg   : 6px;
+
+@input-placeholder-color     : #ccc;
+@input-color                 : @text-color;
+@input-border-color          : @border-color-base;
+@input-bg                    : #fff;
+
+@input-hover-border-color    : @primary-color;
+@input-focus-border-color    : @primary-color;
+@input-disabled-bg           : #f7f7f7;
+
+@form-item-margin-bottom     : 24px;

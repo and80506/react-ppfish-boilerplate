@@ -1,0 +1,265 @@
+body {
+  background-color: #EFEFF4;
+  font-weight: 300;
+}
+// Links
+a {
+  &:active,
+  &:hover {
+    text-decoration: underline;
+  }
+}
+@font-face {
+  font-family: "PingFang SC";
+  font-weight: 100;
+  src: local("PingFang SC Thin"),
+  url('../../font/PingFang-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "PingFang SC";
+  font-weight: 300;
+  src: local("PingFang SC Light"),
+  url('../../font/PingFang-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "PingFang SC";
+  font-weight: 400;
+  src: local("PingFang SC Regular"),
+  url('../../font/PingFang-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "PingFang SC";
+  font-weight: 500;
+  src: local("PingFang SC Medium"),
+  url('../../font/PingFang-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "PingFang SC";
+  font-weight: 700;
+  src: local("PingFang SC Semibold"),
+  url('../../font/PingFang-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "PingFang SC";
+  font-weight: 800;
+  src: local("PingFang SC Heavy"),
+  url('../../font/PingFang-Heavy.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../../iconfont/iconfont.eot'); /* IE9*/
+  src: url('../../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../../iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('../../iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../../iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+// utils
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+// stock rise color
+.util-rise,
+.util-buy {
+  color: #E74528!important;
+}
+.util-lose {
+  color: #1B992B!important;
+}
+.util-sell {
+  color: #007AFF!important;
+}
+.util-btn-sell {
+  background-color: #007AFF;
+  border-color: #007AFF;
+}
+.util-btn-sell:hover {
+  background-color: tint(#007AFF, 20%);
+  border-color: #007AFF;
+}
+.util-pointer {
+  cursor: pointer;
+}
+.util-pointer:hover {
+  text-decoration: underline;
+}
+// stock lose color
+.generate-ellipsis-multiple-lines(10);
+.generate-ellipsis-multiple-lines(@n, @i: 2) when (@i =< @n) {
+  .ellipsis-multiple-line-@{i} {
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: (@i);
+    -webkit-box-orient: vertical;
+  }
+  .generate-ellipsis-multiple-lines(@n, (@i + 1));
+}
+// reset ant components styles
+// Button
+.ant-btn-sm {
+  border-radius: 2px;
+  height: 28px;
+  font-size: 14px;
+}
+.ant-btn {
+  border-radius: 3px;
+  height: 32px;
+  font-size: 14px;
+}
+.ant-btn-lg {
+  border-radius: 5px;
+  height: 36px;
+  font-size: 15px;
+}
+.ant-input-sm {
+  height: 28px;
+  font-size: 14px;
+}
+.ant-input {
+  height: 32px;
+  font-size: 14px;
+}
+.ant-input-lg {
+  height: 36px;
+  font-size: 15px;
+}
+// Menus
+.ant-menu {
+  border: 0;
+  color: #393A4C;
+  a {
+    text-decoration: none;
+  }
+}
+// Pagination
+.ant-pagination {
+  float: right;
+}
+// Tabs
+.ant-tabs-nav {
+  margin-left: 20px;
+  .ant-tabs-ink-bar {
+    height: 3px;
+  }
+  .ant-tabs-tab {
+    margin-right: 0;
+    font-weight: 500;
+    .ant-tabs-tab-inner {
+      padding-left: 18px;
+      padding-right: 18px;
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+}
+// Modal
+.ant-modal-close-x {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+}
+.ant-modal-close {
+  top: 21px;
+}
+.ant-modal-header {
+  padding: 21px 0 23px 40px;
+  color: #393A4E;
+}
+.ant-modal-title {
+  font-size: 17px;
+}
+.ant-modal-body {
+  padding: 30px 0 0 40px;
+  text-align: left;
+}
+.ant-modal-footer {
+  border-top: none;
+  padding: 20px 40px 31px 40px;
+}
+.ant-modal-footer button + button {
+  margin-left: 10px;
+}
+.ant-confirm-warning,
+.ant-confirm-confirm {
+  .ant-confirm-body {
+    .anticon {
+      color: #E74528;
+    }
+  }
+}
+.ant-confirm-btns {
+  .ant-btn-lg {
+    border-radius: 3px;
+    height: 32px;
+  }
+}
+// note tooltip
+.note {
+  margin-top: 10px;
+  .tooltip {
+    position: relative;
+    padding-top: 8px;
+    font-size: 12px;
+    line-height: 1.5;
+    opacity: 0.9;
+    .tooltip-arrow {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-color: transparent;
+      border-style: solid;
+    }
+    .tooltip-inner {
+      max-width: 425px;
+      padding: 10px 15px;
+      color: #393a4c;
+      text-align: left;
+      text-decoration: none;
+      background-color: #ffffff;
+      border-radius: 6px;
+      box-shadow: 0 1px 6px rgba(100, 100, 100, 0.2);
+      min-height: 38px;
+    }
+  }
+  .tooltip-placement-bottom .tooltip-arrow,
+  .tooltip-placement-bottomLeft .tooltip-arrow,
+  .tooltip-placement-bottomRight .tooltip-arrow {
+    top: 3px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #FFFFFF;
+  }
+  .tooltip-placement-bottomLeft .tooltip-arrow {
+    left: 5%;
+  }
+}
+
+
+/* 修改原生 scrollbar 样式调整 */
+.scrollbar-style::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background-color: rgba(255,255,255,0);
+}
+
+.scrollbar-style::-webkit-scrollbar{
+  width: 8px;
+  background-color: rgba(255,255,255,0);
+}
+
+.scrollbar-style::-webkit-scrollbar-thumb{
+  border-radius: 6px;
+  background-color: rgba(255,255,255,.15);
+}

@@ -1,0 +1,22 @@
+import * as antd from 'antd';
+import Avatar from './Avatar/';
+import ImageLoader from './ImageLoader/';
+import Collapse from './Collapse/';
+import StockSuggest from './StockSuggest/';
+import StockPrice from './StockPrice/';
+import Loading from './Loading/';
+
+export const Input = antd.Input;
+export const Menu = antd.Menu;
+export const Icon = antd.Icon;
+export const Form = antd.Form;
+export const Tooltip = antd.Tooltip;
+export const Button = antd.Button;
+export const Modal = antd.Modal;
+export const Pagination = antd.Pagination;
+export const message = antd.message;
+export { Avatar };
+export { Collapse as DyCollapse };
+export { StockSuggest };
+export { StockPrice };
+export { Loading };

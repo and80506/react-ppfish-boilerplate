@@ -1,0 +1,139 @@
+@import "../../assets/css/lib/ant-theme-vars";
+@articlePrefix: article;
+
+.@{articlePrefix} {
+  &-main {
+    min-height: 554px;
+    margin-left: 16px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #EFEFF4;
+    .@{articlePrefix}-pagination {
+      padding: 31px 25px 31px 25px;
+      margin: 0 15px;
+    }
+  }
+  &-title-wrap {
+    border-bottom: 1px solid rgb(217, 217, 217);
+  }
+  &-title-1 {
+    width: 66px;
+    margin-bottom: -1px;
+    margin-left: 22px;
+    font-size: 15px;
+    text-align: center;
+    color: #E74528;
+    line-height: 48px;
+    border-bottom: 4px solid #E74528;
+  }
+  &-title-2 {
+    font-size: 17px;
+    color: #393A4E;
+    a {
+      color: #393A4E;
+    }
+  }
+  &-date {
+    margin-top: 6px;
+    line-height: 22px;
+    height: 22px;
+    font-size: 12px;
+  }
+  &-left {
+    float: left;
+    width: 80%;
+    .article {
+      margin-top: 10px;
+      line-height: 26px;
+      max-height: 78px;
+      font-size: 14px;
+      color: #9B9B9B;
+    }
+
+  }
+  &-btn {
+    margin: 23px 40px 37px 0;
+    .ant-btn {
+      float: right;
+    }
+  }
+  &-btn,
+  &-empty-btn {
+    .ant-btn {
+      width: 120px;
+    }
+  }
+  &-content {
+    padding: 0 25px 16px 25px;
+    margin: 0 15px;
+    .ant-btn {
+      width: 64px;
+      float: right;
+    }
+  }
+
+  &-content + div {
+    padding-top: 21px;
+    border-top: 1px solid #EFEFF4;
+  }
+
+  &-share {
+    margin-top: 19px;
+    line-height: 22px;
+    height: 22px;
+    font-size: 12px;
+  }
+  &-share ul,
+  &-date ul {
+    color: #9B9B9B;
+    li {
+      float: left;
+      margin-left: 11px;
+    }
+    li:first-child {
+      margin-left: 0;
+    }
+  }
+  &-box {
+  }
+  &-img {
+    float: right;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 35px;
+    overflow: hidden;
+  }
+
+  &-empty {
+    padding-top: 70px;
+  }
+  &-empty-btn {
+    margin: 60px auto;
+    text-align: center;
+  }
+  &-empty-text {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 17px;
+    color: #9B9B9B;
+  }
+  &-loading {
+    padding-top: 120px;
+  }
+  &-loading-bg {
+    img {
+      width: 50px;
+    }
+  }
+  &-loading-text {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 17px;
+    color: #9B9B9B;
+  }
+  &-bg {
+    text-align: center;
+  }
+}
+.no-image {
+  width: 100%;
+}

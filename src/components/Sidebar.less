@@ -1,0 +1,90 @@
+@sidebarPrefixCls: sidebar-panel;
+.@{sidebarPrefixCls} {
+  color: #393A4E;
+  .info-container {
+    background-color: #FFFFFF;
+    .avatar {
+      width: 80px;
+      height: 110px;
+      padding-top: 30px;
+      margin: 0 110px 0 110px;
+      img {
+        width: 100%;
+        border-radius:40px ;
+      }
+    }
+    .full-name {
+      margin: 20px 0 0 100px;
+      width: 100px;
+      text-align: center;
+      line-height: 16px;
+      font-size: 15px;
+    }
+    .introduction {
+      margin: 10px 0 0 59px;
+      width: 182px;
+      font-size: 13px;
+      color: #9B9B9B;
+      line-height: 18px;
+      text-align: center;
+    }
+  }
+  &-extra {
+    margin-top: 15px;
+    height: 53px;
+    border-top: 1px solid #EFEFF4;
+  }
+  &-extra-item {
+    float: left;
+    width: 149px;
+    line-height: 15px;
+    text-align: center;
+    font-size: 15px;
+    .number {
+      margin-top: 7px;
+      line-height: 18px;
+    }
+    .text {
+      margin-top: 2px;
+      color: #9B9B9B;
+      line-height: 20px;
+    }
+  }
+  &-separator {
+    width: 1px;
+    div {
+      margin-top: 11px;
+      height: 34px;
+      background-color: #E3E3E5;
+    }
+  }
+
+  &-menu {
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+  &-item {
+    padding-left: 105px;
+    line-height: 48px;
+    height: 48px;
+    font-size: 15px;
+    a {
+      color: #393A4E;
+    }
+    .iconfont {
+      color: #7A7E84;
+    }
+  }
+  &-item-current {
+    border-left: 2px solid #E74528;
+    background: #F6F6F6;
+  }
+  &-item a:hover,
+  &-item-current a {
+    color: #E74528;
+    .iconfont {
+      color: #E74528;
+    }
+  }
+}

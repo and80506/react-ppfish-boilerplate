@@ -1,0 +1,13 @@
+{
+  "menus": [
+    {
+      "name": "首页",
+      "url": "home"
+    },
+    {
+      "name": "文章列表",
+      "url": "article"
+    }
+
+  ]
+}

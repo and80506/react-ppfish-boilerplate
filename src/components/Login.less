@@ -1,0 +1,122 @@
+.login-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 340px;
+  height: 216px;
+  margin: -114px 0 0 -170px;
+
+  .logo {
+    position: absolute;
+    top: -142px;
+    left: 142px;
+    font-size: 56px;
+    color: #FFFFFF;
+  }
+  .title {
+    position: absolute;
+    top: -64px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 27px;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 4px rgba(0,0,0,0.32);
+  }
+  .ant-form-horizontal {
+    height: 100%;
+    padding: 0 30px;
+    background: rgba(255,255,255,0.40);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.21);
+    border-radius: 5px;
+  }
+  .username-item,
+  .password-item {
+    .ant-input {
+      height: 50px;
+      padding-left: 59px;
+      font-size: 17px;
+      color: #FFFFFF;
+      background: rgba(255,255,255,0.40);
+      border: 1px solid #FFFFFF;
+      border-radius: 100px;
+    }
+  }
+  .username-item {
+    padding-top: 30px;
+    margin-bottom: 25px;
+  }
+  .username-explain,
+  .password-explain {
+    line-height: 1;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #f50;
+  }
+  .login-btn {
+    width: 67px;
+    height: 67px;
+    position: absolute;
+    left: 137px;
+    bottom: -34px;
+    background-image: linear-gradient(-180deg, #FAE39A 0%, #C3973C 100%);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.28);
+    border-radius: 34px;
+    border: none;
+    cursor: pointer;
+    .iconfont {
+      font-size: 37px;
+      color: #FFFFFF;
+    }
+  }
+  .login-btn:hover {
+    background-image: linear-gradient(-180deg, tint(#FAE39A, 20%) 0%, tint(#C3973C, 20%) 100%);
+  }
+  .has-feedback {
+    position: relative;
+  }
+  .has-success.has-feedback:after,
+  .has-warning.has-feedback:after,
+  .has-error.has-feedback:after,
+  .is-validating.has-feedback:after {
+    width: 52px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    z-index: 2;
+  }
+  .ant-form-explain {
+    line-height: 36px;
+    font-size: 14px;
+  }
+  .ant-input-group-addon {
+    position: absolute;
+    top: 9px;
+    left: 13px;
+    border: 0;
+    width: 42px;
+    line-height: 1;
+    background-color: transparent;
+    z-index: 3;
+    .iconfont {
+      font-size: 22px;
+      color: #FFFFFF;
+    }
+
+  }
+  .has-error  {
+    .ant-input-group-addon {
+      //border: 0;
+    }
+    .ant-input {
+      border-color: #f50;
+      //border: 0;
+    }
+  }
+  .login-result {
+    position: relative;
+    top: 10px;
+    font-size: 14px;
+    color: #f50;
+  }
+}
